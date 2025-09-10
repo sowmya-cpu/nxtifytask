@@ -1,0 +1,128 @@
+/* Base styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  color: #222;
+  transition: background 0.5s ease, color 0.5s ease;
+  min-height: 100vh;
+}
+.app {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 0 16px;
+}
+
+header h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+/* Controls */
+.controls {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+/* Form styling */
+.add-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 12px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  width: 320px;
+}
+
+.add-form input,
+.add-form textarea,
+.add-form select {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.add-form button {
+  padding: 8px;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+  background: #6c5ce7;
+  color: white;
+  font-weight: bold;
+}
+
+.add-form button:hover {
+  background: #5a4bd1;
+}
+
+/* Right controls (search, etc.) */
+.right-controls {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-left: auto;
+}
+
+.right-controls input {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+/* Grid for products */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 12px;
+}
+
+/* Product card */
+.card {
+  background: #fff;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+
+.price {
+  font-weight: 700;
+  margin: 6px 0;
+}
+
+.actions {
+  margin-top: 8px;
+  display: flex;
+  gap: 8px;
+}
+
+.actions button {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 0;
+  cursor: pointer;
+  background: #ff7675;
+  color: white;
+  font-weight: bold;
+}
+
+.actions button:hover {
+  background: #e05656;
+}
+
+/* Error message */
+.error {
+  color: #d63031;
+  margin-top: 8px;
+}
+
+/* No items */
+.no-items {
+  text-align: center;
+  padding: 20px;
+  color: #888;
+}
